@@ -7,6 +7,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ApiComponent } from './services/api/api.component';
 import { HomeComponent } from './pages/home/home.component';
+import { BtnWhatsappComponent } from './components/btn-whatsapp/btn-whatsapp.component';
+import { HeadComponent } from './components/head/head.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HomeComponent } from './pages/home/home.component';
     NavbarComponent,
     FooterComponent,
     ApiComponent,
-    HomeComponent
+    HomeComponent,
+    BtnWhatsappComponent,
+    HeadComponent
   ],
   imports: [
     BrowserModule,
