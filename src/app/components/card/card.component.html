@@ -1,0 +1,16 @@
+<div class="card">
+    <img
+      [src]="plato.imagen"
+      [alt]="plato.nombre"
+      class="card-img"
+    />
+    <div class="card-content">
+      <h3 class="card-title">{{ plato.nombre }}</h3>
+      <p class="card-description">{{ plato.descripcion }}</p>
+      <div class="card-footer">
+        <span class="card-price">${{ plato.precio }}</span>
+        <button class="card-button">Ordenar</button>
+      </div>
+    </div>
+  </div>
+  

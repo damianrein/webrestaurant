@@ -5,20 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ApiComponent } from './services/api/api.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BtnWhatsappComponent } from './components/btn-whatsapp/btn-whatsapp.component';
 import { HeadComponent } from './components/head/head.component';
+import { CardComponent } from './components/card/card.component';
+import { CardContainerComponent } from './components/card-container/card-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    ApiComponent,
     HomeComponent,
     BtnWhatsappComponent,
-    HeadComponent
+    HeadComponent,
+    CardComponent,
+    CardContainerComponent
   ],
   imports: [
     BrowserModule,
