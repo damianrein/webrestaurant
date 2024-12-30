@@ -1,0 +1,24 @@
+<div class="container">
+    <table class="table">
+        <div class="container-table">
+            <thead class="thead">
+                <th>Día</th>
+                <th>Fecha</th>
+                <th>Comensales</th>
+                <th>Opciones</th>
+            </thead>
+            <tbody class="tbody">
+                <td>Viernes</td>
+                <th>02/09</th>
+                <th>5</th>
+                <th><button (click)="openReservationForm()">reservar</button></th>
+            </tbody>
+        </div>
+    </table>
+</div>
+<dialog #reservationDialog>
+    <div class="modal-content">
+      <span class="close" (click)="closeReservationForm()">&times;</span>
+      <app-reservation-form></app-reservation-form>
+    </div>
+  </dialog>

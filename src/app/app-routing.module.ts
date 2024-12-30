@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { FormsComponent } from './components/forms/forms.component';
-import { ReservationFormComponent } from './components/reservation-form/reservation-form.component';
+import { ReservationsComponent } from './pages/reservations/reservations.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
   {path:'login', component:FormsComponent},
-  {path:'reservation', component:ReservationFormComponent},
+  {path:'reservation', component:ReservationsComponent},
   {path:'**', component:HomeComponent}
 ];
 

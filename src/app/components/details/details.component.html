@@ -1,0 +1,22 @@
+<div class="container">
+    <dialog class="dialog">
+        <div class="dialgo-content">
+            <div class="tittle">
+                <h3>{{plato?.nombre}}</h3>
+            </div>
+            <div class="img">
+                <picture>
+                    <img [src]="plato?.imagen" alt="imagen">
+                </picture>
+            </div>
+            <div class="descripcion">
+                <p>Descripción:<br>
+                {{plato?.descripcion}}</p>
+            </div>
+            <div class="precio">
+                <p>Precio:<br>
+                {{plato?.precio}}</p>
+            </div>    
+        </div>
+    </dialog>
+</div>

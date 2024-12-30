@@ -12,6 +12,8 @@ import { CardComponent } from './components/card/card.component';
 import { CardContainerComponent } from './components/card-container/card-container.component';
 import { FormsComponent } from './components/forms/forms.component';
 import { ReservationFormComponent } from './components/reservation-form/reservation-form.component';
+import { ReservationsComponent } from './pages/reservations/reservations.component';
+import { DetailsComponent } from './components/details/details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ReservationFormComponent } from './components/reservation-form/reservat
     CardComponent,
     CardContainerComponent,
     FormsComponent,
-    ReservationFormComponent
+    ReservationFormComponent,
+    ReservationsComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
