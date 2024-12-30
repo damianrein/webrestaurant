@@ -18,4 +18,13 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isReservationModalOpen = false;
+
+  openReservationModal() {
+    this.isReservationModalOpen = true;
+  }
+
+  closeReservationModal() {
+    this.isReservationModalOpen = false;
+  }
 }

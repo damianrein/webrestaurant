@@ -1,0 +1,35 @@
+<div *ngIf="isLoginVisible" class="login-container">
+    <form class="form" action="login" method="post">
+        <div>
+            <input type="email" name="email" id="" placeholder="Email">
+        </div>
+        <div>
+            <input type="password" name="password" id="" placeholder="Password">
+        </div>
+        <div>
+            <input type="submit" value="Log in">
+        </div>
+        <div>
+            <a (click)="showRegister()">Register</a>
+        </div>
+    </form>
+</div>
+<div *ngIf="!isLoginVisible" class="register-container">
+    <form class="form" action="register" method="post">
+        <div>
+            <input type="email" name="email" id="" placeholder="Email">
+        </div>
+        <div>
+            <input type="password" name="password" id="" placeholder="Password">
+        </div>
+        <div>
+            <input type="password" name="password" id="" placeholder="Repeat Password">
+        </div>
+        <div>
+            <input type="submit" value="Register">
+        </div>
+        <div>
+            <a (click)="showLogin()">Log in</a>
+        </div>
+    </form>
+</div>
