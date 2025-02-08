@@ -14,6 +14,8 @@ import { FormsComponent } from './components/forms/forms.component';
 import { ReservationFormComponent } from './components/reservation-form/reservation-form.component';
 import { ReservationsComponent } from './pages/reservations/reservations.component';
 import { DetailsComponent } from './components/details/details.component';
+import { AuthInterceptor } from './services/interceptor/auth.interceptor';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { DetailsComponent } from './components/details/details.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
